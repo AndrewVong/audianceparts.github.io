@@ -98,7 +98,7 @@ a {
     gap: .25px;
     /*first column, second column size*/
     grid-template-columns: 1.15fr 2fr;
-    outline: 5px solid grey; 
+/*     outline: 5px solid grey;  */
 
 }
 
