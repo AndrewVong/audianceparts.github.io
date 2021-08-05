@@ -1,0 +1,310 @@
+
+
+/* https://www.ntpparts.com/
+https://www.autozone.com/fluids-and-chemicals/car-wash-and-detailing */
+
+body {
+
+    margin:0;
+    height: 100vh;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bolder;
+}
+
+.box {
+
+    
+    /*padding:50px 100px;
+    margin:40px 60px;*/
+    cursor:pointer;
+    /*display:inline-block;*/
+    font-family: 'Raleway', sans-serif;
+    color:#202124;
+    font-size:1.25em;
+    border-radius:4px;
+    /* border:1px solid #bbb; */
+    transition: all 0.3s linear;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.grid-wrapper {
+
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 2fr;
+    grid-template-rows: 1.25fr 10fr 5.5fr 3fr;
+    grid-template-areas: 
+
+    "header     header   header"
+    "cover      cover    cover"
+    "feature    feature  feature"
+    "footer     footer   footer";
+    
+    margin: .5em;
+    height: 100vh;
+}
+
+header {
+
+    /* box */
+ 
+    grid-area: header;
+    background-color:whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+}    
+
+
+/* When the screen (browser window) gets smaller than 768px, each column should have a width of 100%: */
+@media only screen and (max-width: 768px) {
+
+    header li {
+
+        display: flex;
+        grid-area: header;
+        font-size: 0.7em;
+        padding: 0;
+        margin: 0;
+        display: block;
+        width: 100%;
+    }
+
+
+}
+
+
+li {
+
+    list-style: none;
+    padding: 10px;
+    margin: 10px;
+    
+    
+}
+
+a {
+
+    text-decoration: none;
+    color:tomato;
+}
+
+.push {
+
+    /* move logo to right */
+    margin-right: auto;
+    justify-items: flex-end;
+}
+
+
+/* COVER */
+
+section.cover {
+
+    display: grid;
+    grid-template-columns: 1.15fr 2fr;
+    gap: 1.5px;
+    margin: 1.5px;
+
+
+     /* background: url(./img/ntp_top_auto_parts.jpg);  */
+}
+
+.cover img {
+
+                /*percentage container filled*/
+                height: 30vh;
+                /*fill viewport, screen*/
+                width: 100%;
+               
+}
+
+.wide {
+    /* playing with span
+stretches image to 3rd column */
+grid-column:1/3;
+}
+
+
+.move {
+
+    justify-content: flex-start;
+}
+
+
+/* FEATURE GRID */
+
+.feature {
+
+    
+    grid-area: feature;
+    background-color: white;
+    align-items: baseline;
+    display: grid;
+    /* auto fill entire viewport */
+    grid-template-columns:repeat(auto-fill, minmax(350px,1fr));
+    /* height: 30vh; */
+}
+
+.box{
+
+    /* width: 600px; */
+	/* height: 400px;
+    padding:   120px; */
+    transition: all 1s;
+}
+.box:hover {
+	transform: scale(1.1);
+}
+
+
+/* When the screen (browser window) gets smaller than 768px, each column should have a width of 100%: */
+@media only screen and (max-width: 768px) {
+
+    .feature {
+
+        display: grid;
+        grid-area: feature;
+        grid-template-columns: .50fr .50fr;
+        grid-template-rows: .50fr .50fr;
+        font-size: 0.7em;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+}
+
+                                                          
+  /* grid-template-columns: repeat(auto-fill, minmax(350px,1fr)); */
+
+  /* @media only screen and (max-width: 600px) {
+
+    .main-nav {
+
+        font-size: 0.5em;
+        padding: 0;
+    }
+} */
+
+/* grid-area: 2 / 3 / 5 / 4;
+background: url('') no repeat;
+background-size: cover; */
+
+
+ 
+                                                            /* .push {
+                                                                 float: left;
+                                                                 height: auto;
+                                                                 width: 5px;
+                                                                }
+                                                                    
+
+                                                            ul {
+                                                                list-style-type: none;
+                                            
+                                                                margin: 0;
+                                                                padding: 0;
+                                                                overflow: hidden;
+                                                                background-color:whitesmoke;
+                                                            }
+                                                            
+                                                            li {
+                                                               
+                                                                float: right;
+                                                                vertical-align: middle;
+                                                            }
+                                                            
+                                                            li a {
+                                                                display: block;
+                                                                color: rgb(238, 95, 0);
+                                                                text-align: center;
+                                                                padding: 10px;
+                                                                text-decoration: none;
+                                                            }
+                                                            
+                                                            li a:hover {
+                                                                background-color: midnightblue;
+                                                            }  */
+
+
+
+                        .cover {
+                            /* box */
+                            grid-area: cover;
+                            background-color: rgba(245, 245, 245, 0.931);
+                        }
+
+
+.footer {
+    /* box */
+
+    grid-area: footer;
+    display: grid;
+    background-color: rgb(37, 35, 35);
+
+    /* padding: 20px; */
+    
+    color: rgb(105, 105, 105);
+    font-size: .7em;
+}
+
+
+.footer-wrapper {
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(350px, 1fr));
+    grid-template-areas: 
+    
+    "col-1 col-2 col-3" ;
+
+
+}
+
+.col-1 {
+
+  
+    grid-area: col-1;
+    /* background-color: aquamarine; */
+}
+
+.col-2 {
+   
+    grid-area: col-2;
+    /* background-color: rgb(136, 150, 31); */
+}
+
+.col-3 {
+   
+         grid-area: col-3;
+        /* background-color: blanchedalmond; */
+}
+
+/* When the screen (browser window) gets smaller than 768px, each column should have a width of 100%: */
+@media only screen and (max-width: 768px) {
+
+    .footer {
+
+        display: flex;
+        grid-area: footer;
+        font-size: 0.7em;
+        padding: 0;
+        margin: 0;
+        display: block;
+        width: 100%;
+    }
+
+
+}
+
+.row {
+
+        display: flex;
+       align-content: space-around;
+       flex-wrap: wrap;
+   
+      }  
+
+
