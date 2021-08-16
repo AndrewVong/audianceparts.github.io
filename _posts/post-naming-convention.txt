@@ -1,0 +1,1 @@
+Blog post files should always be named using this format: yyyy-mm-dd-your-blog-post-name.md
