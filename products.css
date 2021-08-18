@@ -1,0 +1,206 @@
+
+
+/* Custom Properties reduces size of css files, reduce repititions, naming convention based on font weights 
+higher are thicker fonts */
+/* :root {
+
+    --clr-primary-300:
+    --clr-primary-400: 
+    --clr-neutral-100: #FFF;
+    --clr-neutral-900:
+} */
+
+/* Set border box, box-sizing */
+/* *,
+*::before,
+*::after {
+
+box-sizing: border-box;
+
+} */
+
+body,
+h1,
+h2,
+h3,
+p {
+
+    /* automatically calc's margin width adjusting to screen size */
+ 
+    margin: 0 auto;
+    font-family: 'Rubik', sans-serif;
+    background: url(./img/wrinkled-paper.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* ===================HEADER=========================== */
+
+
+.main-nav {
+
+    display: flex;
+    flex-direction: row; 
+  
+}
+
+        .main-nav li {
+            list-style:none; 
+            padding: 5px;   
+        }
+                /* hide logo */
+                .main-nav img {
+                    display: none; 
+                }
+
+.main-nav a{
+
+    text-decoration: none;
+    color: tomato;
+    font-weight: bold;
+
+}
+
+
+
+
+/* ===============PRODUCTS============================ */
+
+.title h1 {
+    text-align: center;
+    padding: 1em;
+    text-transform: uppercase;
+    color:rgb(105, 105, 105);
+}
+
+.products img {
+
+    gap: .5em;
+    height: auto;
+    max-width: 100%;
+
+   
+}
+
+
+/* ================FOOOTER============================ */
+
+.f-col-1, 
+.f-col-2 {
+
+    display: block;
+        list-style: none;
+            line-height: 1.5em;
+            font-size: .8em;
+        padding: 1em;
+    margin: .1em;
+
+    background-color: rgb(37, 35, 35);
+    color:rgb(105, 105, 105);
+
+
+}
+
+.store-name-1,
+.store-name-2,
+.store-address-1,
+.store-map{
+
+    text-align: center;
+    color: tomato;
+    font-size: 1em;
+}
+
+
+/* apply props to screens 515px or more */
+@media only screen and (min-width: 515px) {
+
+/*move to side of screen*/
+    .main-nav {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      }
+                   /* show logo */
+                   .main-nav img {
+
+                    display: block; 
+
+                }
+
+    /* move logo to left screen */
+    li.push {
+        margin-right: auto;
+    }
+
+}
+
+
+/* apply props above  770px or above  */
+ @media only screen and (min-width: 770px) {
+
+
+    section.products {
+
+        display: grid;
+        grid-template-columns: 1.85fr 1.85fr;
+        grid-template-rows: repeat(4, 1fr);
+        gap: .1em;
+        grid-template-areas: 
+
+    "box-1       box-2"
+    "box-3      box-4"
+    "box-5      box-6"
+    "f-col-1    f-col-2";
+
+
+height: 100vh;
+margin: .1em;
+padding: .1em;
+gap: .1em;
+
+}
+
+     .products img {
+
+        transition: all 1s;
+        height: 100%;
+        width: 100%;
+
+    }  
+     
+    .products img:hover {
+        
+        transform: scale(1.1);
+    }
+
+.main-nav {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      }
+
+    /* show logo */
+    .push img {
+        display: block;
+    }
+
+    /* move logo to left screen */
+    li.push {
+        margin-right: auto;
+    }
+
+    
+
+ 
+.f-col-1 li, 
+.f-col-2 li {
+
+    line-height: 1.5em;
+    list-style: none;
+    
+    
+    } 
+
+
+
+} 
