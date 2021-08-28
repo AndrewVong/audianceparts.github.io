@@ -22,6 +22,7 @@ box-sizing: border-box;
 body {
 
     margin: 0 auto;
+    font-size: 10px;
     height: 100vh;
     font-family: 'Rubik', sans-serif;
 
@@ -49,7 +50,7 @@ header {
 .main-nav li {
 
     list-style: none;
-    padding:10px;
+    padding: 1rem;
 }
 
 .main-nav a {
@@ -70,6 +71,7 @@ section.about {
     grid-template-columns: 1.85fr 1.85fr;
     grid-template-rows: 2fr 4fr 1fr 1fr;
     grid-template-areas: 
+        
 "oc           bp-img"
 "rc-list      bp-img"
 "jab-img      vsms"
@@ -77,9 +79,9 @@ section.about {
 
 
 height: 100vh;
-margin: .1em;
-padding: .1em;
-gap: .1em;
+margin: .1rem;
+padding: .1rem;
+gap: .1rem;
 
 }
 
@@ -97,7 +99,7 @@ section.about h1 {
     grid-area: oc;
 
     background-color: rgb(20, 20, 51);
-    padding: 2em;
+    padding: 1rem;
    
 }
 
@@ -105,7 +107,7 @@ section.about h1 {
 
     display: flex;
    justify-content: center;
-   line-height: 1.5em;
+   line-height: 1.5rem;
    color: whitesmoke;
    
 
@@ -116,7 +118,7 @@ section.about h1 {
 
     grid-area: rc-list;
     background-color: rgb(20, 20, 51);
-/*     padding: 2em; */
+    padding: 1rem;
     
  }
 
@@ -132,7 +134,7 @@ section.about h1 {
 
 .rc-list ul {
 
-    padding: 0;
+    padding: 1rem;
 }
 
 #jab-img {
@@ -165,7 +167,7 @@ div.vsms {
     grid-area: vsms;
 
     background-color: rgb(20, 20, 51);
-    padding: 2em;
+    padding: 2rem;
 }
 
 
@@ -188,10 +190,10 @@ div.vsms p {
     
     display: block;
         list-style: none;
-            line-height: 1.5em;
-            font-size: .8em;
-        padding: 1em;
-    margin: .1em 0;
+            line-height: 1.5rem;
+            font-size: .8rem;
+        padding: 1rem;
+    margin: .1rem 0;
 
     background-color: rgb(37, 35, 35);
     color:rgb(105, 105, 105);
@@ -201,7 +203,7 @@ div.vsms p {
 
 .f-col-1 li, 
 .f-col-2 li {
-    line-height: 1.5em;
+    line-height: 1.5rem;
     list-style: none;
 }
 
@@ -214,7 +216,7 @@ div.vsms p {
 
     text-align: center;
     color:tomato;
-    font-size: 1em;
+    font-size: 1rem;
     
 }
 
@@ -255,7 +257,7 @@ div.vsms p {
        
         list-style: none;
         /* padding:10px; */
-        font-size: .8em;
+        font-size: .8rem;
         margin-right: auto;
     }
 
