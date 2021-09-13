@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audiance | Contact Us </title>
+
+        <!-- ================================================bootstrap============================================== -->
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        
+        <!-- ======================================================================================================= -->
+    
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./main-css/main--.css">
+    
+</head>
+<body>
+
+     <!-- ======================================================= HEADER ==========================================================-->
+
+   <div id = "index-container">
+
+    <header class="site-header sticky">
+
+     <div>
+       <h1><a href"#"><img src="./img/aap-logo.png" alt="aap-logo" height="95px" width="130px"></a></h1>
+     </div>
+
+       <ul class = "main-nav">
+
+           <li class ="push"><img src="./img/aap-logo.png" alt="aap-logo" height="95px" width="130px"></li>  
+           <li><a href="./main-index.html">Home</a></li>
+           <li><a href="./products.html">Products</a></li>
+           <li><a href="./about-aap.html">About Us</a></li>
+           <li><a href="https://audianceparts.blogspot.com/" target="_blank">News</a></li>
+          <li><a href="./contact-us.html"><button type="button" class="btn btn-outline-danger">Contact Us</button></a></li>
+          
+
+       </ul>
+
+    </header>
+
+    <!-- ======================================================= Form  ==========================================================-->
+    <!-- flex container -->
+    <div class="contact-us">
+        <!-- flex content/children -->
+        <div class="row">
+
+            <div class="col-md-6 col-md-offset-3">
+
+                <h2 text-align="center">CONTACT US</h2> 
+        
+
+
+                <form role="form" method="post" id="reused_form" >
+
+                    <div class="form-group">
+                        <label for="name"> Name:</label>
+                        <input type="text" class="form-control" id="name" name="name" required maxlength="50">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email"> Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" required maxlength="50">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="name"> Message: </label>
+                        <textarea class="form-control" type="textarea" name="message" id="message" placeholder="Your Message Here" maxlength="6000" rows="7"></textarea>
+                    </div>
+
+                    <div class="row" style="margin-bottom:30px;">
+                        <div class="col-sm-5">
+                            <img src="captcha.php" id="captcha_image"/>
+                            <br/>
+                            <a id="captcha_reload" href="#">reload</a> 
+                        </div>
+
+                        <div class="col-sm-6">
+                            <label for="email">Enter the code from the image here:</label>
+                            <input type="text" class="form-control" required id="captcha" name="captcha" >
+                        </div>
+
+                    </div>
+                    <button type="submit" class="btn btn-lg btn-success pull-right" id="btnContactUs">SEND</button> 
+
+                    
+                    <ul class = "contact-info">
+                        
+                       <li>Feedback? Questions? Send message or Contact support by phone at +634-9576-1797</li>
+                       <li>STORE HOURS:</li>
+                       <li>Monday: Friday 9am to 5:30pm </li>
+                       <li>Saturday: 9am to 5:30pm </li>
+                       
+                       <li>Sunday: Closed</li>
+                       <li>Audiance Auto Parts(TM) respects your privacy and safety concerns. </li>  
+                       <li>Please also visit us on:</li> 
+                        
+                    </ul>
+
+                    <ul class = "social-media">
+
+                        <!-- opens new window -->
+                        
+                        <li><a href="https://www.facebook.com/salbusilangauto" target="_blank"><img src="./img/facebook-icon.png" alt="facebook-logo" height="95px" width="130px"></a></li>
+                        
+                        <li><a href="https://www.instagram.com/salbusilangauto/" target="_blank"><img src="./img/Instagram-icon.png" alt="instagram-logo" height="95px" width="130px"></a></li> 
+                         
+                     </ul>
+                     
+                    
+
+                </form>
+
+                
+
+                <div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Sent your message successfully!</h3> </div>
+                <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry there was an error sending your form.</div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+<!-- ======================================================= Footer  ==========================================================-->
+
+    <section class ="site-footer"> 
+
+        <div class ="f-col-1">
+
+            <li class="store-name-1">Audiance Autoparts</li>
+
+            <li class="store-desc">When only quality, reliable, OEM aftermarket Japanese and international autoparts will do, and when you need them quickly, in quantity, direct from a US location, Audiance is here for you.</li>
+            <li class="store-phone">Phone: +634-9576-1797</li>
+            <li class="email">Email:support@audianceparts.com</li>
+            <li class='hours'>Business Hours: Mon. - Fri: 9:00am – 5:30pm</li>
+
+        </div>
+
+
+    <div class = "f-col-2">
+        
+        <li class="store-address-1">Address </li>
+        <li class="store-address-2">Audiance Auto Parts (AAP) </li> 
+        <li class="store-address-2">Bosch Building, Tagaytay Rd. Sitio Muzon, Brgy. Puting Kahoy, Silang Cavite 4118</li>
+        <li class ="store-map"><a href="https://goo.gl/maps/xLEsusHs5Vn2sD1j6" target="_map" class="footer-address__link">Get Directions</a></li>
+        <li class = "copyright">Copyrights 2021</li>
+        <li class ="store-name-2">Audiance Auto Parts Corporation</li>
+        <li class ="rights">All rights reserved.</li>
+        <li class ="terms">Terms of Use Privacy Policy</li>
+
+    </div>
+
+
+             </footer> 
+
+    
+</body>
+</html>
