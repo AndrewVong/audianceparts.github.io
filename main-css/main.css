@@ -288,12 +288,13 @@ header div:first-child h1{
         
         }
 
-        .contact-info li:nth-child(1){
+        .contact-info li:nth-child(1),
+        .contact-info li:nth-child(2){
 
             font-size: 1.2rem;
         }
 
-        .contact-info li:nth-child(2),
+        .contact-info li:nth-child(3),
         .contact-info li:nth-child(7) {
 
             font-weight: bold;
