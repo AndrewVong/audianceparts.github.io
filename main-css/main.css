@@ -146,7 +146,7 @@ header div:first-child h1{
     font-family: 'Raleway', sans-serif;
     color:#202124;  
     border-radius:4px;
-    transition: all 0.3s linear;    
+/*     transition: all 0.3s linear;     */
     text-align: center;
     text-transform: uppercase;
 }
@@ -442,8 +442,8 @@ li.push {
     margin: 0;
   }
 
-      /* hover effects */
-      .feature-grid img:hover,
+      /* effects */
+/*       .feature-grid img:hover, */
       .main-nav a:hover {
       
         transform: scale(1.1);
