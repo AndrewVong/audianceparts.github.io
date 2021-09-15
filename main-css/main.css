@@ -255,7 +255,7 @@ li.ms-desc p {
                                  .row {
 
                                     display: flex;
-                                    justify-content: center;
+                                    justify-content: flex-start;
                                     margin: 1rem 0;
                                     width: 100%;
                                     
