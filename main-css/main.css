@@ -172,9 +172,7 @@ header div:first-child h1{
     color: #f25757;
     padding: 1rem;
     font-size: 1.25rem;
-    text-decoration: underline dotted;
     font-weight: bold;
-        list-style:none;
   
 }
 
@@ -192,11 +190,11 @@ header div:first-child h1{
 
 .our-companies p,
 .related-companies li,
-.vs-desc p, 
-.ms-desc p {
+li.vs-desc p, 
+li.ms-desc p {
 
     font-size: 1rem;
-    list-style:none;
+    list-style: none;
 }
 
 .related-companies li {
