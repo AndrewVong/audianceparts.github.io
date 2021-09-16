@@ -18,7 +18,7 @@ $validator->fields(['name','email'])->areRequired()->maxLength(50);
 $validator->field('email')->isEmail();
 $validator->field('message')->maxLength(6000);
 
-$pp->getReCaptcha()->initSecretKey('6LfPemgcAAAAAEWmRGCIbZe2PY5W5DL0zIQG54Uz');
+$pp->getReCaptcha()->initSecretKey('6Le5E24cAAAAAKKBjQK0XRwR04NEexeF5XCQdkNr');
 $pp->requireCaptcha();
 
 
