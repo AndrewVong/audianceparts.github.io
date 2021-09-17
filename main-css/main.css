@@ -266,12 +266,14 @@ header div:first-child h1{
                                 
                                 
                                 
-                                h1, p 
-                                {
+                               .form-container h1, 
+                                form-container p {
                                   text-align: center;
                                 }
                                 
-                                input, textarea 
+                                
+                                input, 
+                                textarea 
                                 {
                                   width: 100%;
                                 }   
