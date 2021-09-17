@@ -314,12 +314,12 @@ header div:first-child h1{
                                     margin: .5rem;
                                  } */
 
-    h2 {
+/*     h2 {
         font-size: 2rem;
         font-weight: bold;
         text-align: center;
         margin: 1rem;
-    }
+    } */
 
     #btnContactUs {
         display: flex;
@@ -349,6 +349,7 @@ header div:first-child h1{
         }
 
         .social-media {
+            
             display: flex;
             list-style: none;
             
