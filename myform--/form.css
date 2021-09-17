@@ -1,0 +1,59 @@
+
+
+    div.container {
+      padding: 0;
+    }
+    
+    .form-container {
+      padding: 0;
+      background: #ffffff;
+     /* max-width: 1000px; */
+      width: 100%;
+      margin: 0;
+    }
+
+
+
+h1, p 
+{
+  text-align: center;
+}
+
+input, textarea 
+{
+  width: 100%;
+}   
+
+.send {
+
+
+width: 100%;
+margin-left: right;
+background: #f25757;
+color: #ffffff;
+font-weight: bold;
+
+}
+
+
+textarea
+{
+  height: 200px;
+}
+
+@media  only screen and (min-device-width: 515px) 
+  {
+
+    .send {
+
+        width: 20%;
+      
+      }
+
+      .form-container {
+        padding: 5%;
+        border: 9px solid #f2f2f2; 
+      }
+      
+
+  }
