@@ -116,7 +116,7 @@ header div:first-child h1{
 
 
 
-.feature-grid img,
+
 .feature-grid p {
 
     display: block;
@@ -149,6 +149,15 @@ header div:first-child h1{
     /* transition: all 0.3s linear;     */
     text-align: center;
     text-transform: uppercase;
+}
+
+.box img {
+
+  padding: 1.5rem;
+}
+.box p {
+    
+  padding: 0;
 }
 
 
@@ -627,6 +636,13 @@ width: 100%;
         color: whitesmoke; */
         padding:2rem;
 
+    }
+    
+         /* *****************************FEATURE-GRID***************************** */
+
+    .box img {
+
+      padding: 5rem;
     }
 
 
