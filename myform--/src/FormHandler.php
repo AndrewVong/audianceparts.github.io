@@ -40,7 +40,7 @@ class FormHandler
 		$this->emails = array();
 		$this->validator = FormValidator::create();
 		$this->mailer = new PHPMailer;
-		$this->mail_template='https://audianceparts.com/index.html';
+		$this->mail_template='';
 
 		$this->mailer->Subject = "Contact Form Submission ";
 
